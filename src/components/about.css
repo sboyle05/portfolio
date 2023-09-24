@@ -1,0 +1,133 @@
+
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+
+}
+
+#samPic{
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+.photos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+#samPic1{
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+  margin-top: 20px;
+
+}
+
+
+#titleAbout {
+  align-self: center;
+  font-size: 2rem;
+  font-family: 'Lexend Tera', sans-serif;
+  margin-top: 100px;
+}
+
+.aboutParagraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #121212;
+  margin: 0 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 1rem;
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+}
+
+.aboutParagraph p{
+  margin-bottom: -2px;
+}
+
+/* Media Query for Mobile Devices */
+@media (min-width: 546px) and (max-width: 768px) {
+
+  .aboutContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: calc(100vh - 60px);
+  padding: 2rem; /* Added padding */
+  }
+
+  #titleAbout {
+    font-size: 1.5rem;
+    margin-top: 20%;
+  }
+
+  .aboutParagraph {
+    margin-top: 5px;
+    padding: 0.5rem;
+    height: auto;
+    padding-bottom: 20px;
+    width: 90%;
+  }
+}
+@media (min-width: 400px) and (max-width: 545px) {
+
+  .aboutContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: calc(100vh - 60px);
+  padding: 2rem;
+  }
+
+  #titleAbout {
+    font-size: 1.5rem;
+    margin-top: 25%;
+  }
+
+  .aboutParagraph {
+    margin-top: 5px;
+    padding: 0.5rem;
+    height: auto;
+    padding-bottom: 20px;
+    width: 90%;
+  }
+}
+@media (max-width: 400px){
+
+  .aboutContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: calc(100vh - 60px);
+  padding: 2rem;
+  }
+
+  #titleAbout {
+    font-size: 1.5rem;
+    margin-top: 35%;
+  }
+
+  .aboutParagraph {
+    margin-top: 5px;
+    padding: 0.5rem;
+    height: auto;
+    padding-bottom: 20px;
+    width: 90%;
+  }
+}

@@ -5,14 +5,16 @@ import './projects.css';
 // import WTC from '../assets/WTC.png';
 // import AWN from '../assets/AWN.jpg';
 import github from '../assets/github.png';
+import { useTheme } from './themeProvider';
+
 
 const Projects = () => {
 	const classes = useStyles();
-
+	const { theme } = useTheme();
 	return (
 		<section className={`${classes.contentContainer} aboutContainer`}>
 			<section className='projectContainer'>
-				<h2 id='projectsTitle'>Projects</h2>
+				<h2 style={{ color: theme === 'light' ? 'var(--light-text)' : 'var(--dark-text)' }} id='projectsTitle'>Projects</h2>
 				<section className='projectLinks'>
 					<section className='individualProject'>
 						<a
@@ -80,7 +82,7 @@ const Projects = () => {
 					</section>
 				</section>
 
-				<p>The Magic Behind It All</p>
+				<p style={{ color: theme === 'light' ? 'var(--light-text)' : 'var(--dark-text)' }}>The Magic Behind It All</p>
 				<section className='iconContainer'>
 					<img
 						className='techIcon'

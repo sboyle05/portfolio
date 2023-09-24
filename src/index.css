@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --light-text: #121212;
+  --dark-text: #ffffff;
+  --light-background: rgba(255, 255, 255, 0.5);
+  --dark-background: rgba(0, 0, 0, 0.8);
+}
+
+body[data-theme='light'] {
+  --text-color: var(--light-text);
+}
+
+body[data-theme='dark'] {
+  --text-color: var(--dark-text);
+}

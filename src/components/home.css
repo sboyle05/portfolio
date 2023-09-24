@@ -1,3 +1,8 @@
+#titleName, #sentencesTyped{
+  color: var(--text-color);
+}
+
+
 .homeContainer{
   display: flex;
   flex-direction: column;

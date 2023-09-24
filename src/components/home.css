@@ -2,15 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
 }
 
 #titleName{
   display: flex;
   align-items: center;
+  margin-top: 160px;
   justify-content: center;
-  margin-top: -45vh;
   font-size: 30px;
   font-family: 'Lexend Tera', sans-serif;
 }

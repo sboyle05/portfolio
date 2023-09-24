@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useStyles } from '../App';
 import './about.css';
+import { useTheme } from './themeProvider';
 // import sam from '../assets/sam.jpeg';
 // import sam2 from '../assets/sam2.png';
 // import sam3 from '../assets/sam3.jpeg';
@@ -9,7 +10,7 @@ import './about.css';
 // import sam6 from '../assets/sam6.jpeg';
 const About = () => {
 	const classes = useStyles();
-
+	const { theme } = useTheme();
 	useEffect(() => {
 		const setVhVariable = () => {
 			document.documentElement.style.setProperty(
@@ -28,7 +29,7 @@ const About = () => {
 	return (
 		<section className={`${classes.contentContainer} aboutContainer`}>
 			<section className='aboutContainer'>
-				<h2 id='titleAbout'>Sam’s World: Code, Cuisine, and Curiosity</h2>
+				<h2 style={{ color: theme === 'light' ? '#121212' : '#ffffff' }} id='titleAbout'>Sam’s World: Code, Cuisine, and Curiosity</h2>
 				<section className='aboutParagraph'>
 					<p>
 						Sam Boyle is a full-stack software engineer with a diverse

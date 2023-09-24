@@ -1,5 +1,4 @@
 
-
 .projectContainer {
   display: flex;
   flex-direction: column;
@@ -17,11 +16,12 @@
   flex-direction: row;
   margin-left: 50px;
   margin-right: 50px;
-  background-color: rgba(255, 255, 255, 0.5);
   padding: .5rem;
   border-radius: 15px;
   margin-bottom: 15px;
   font-family: 'Oxygen', sans-serif;
+  color: var(--text);
+  background-color: var(--background);
 }
 
 .projectInfo a{

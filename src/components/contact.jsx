@@ -4,12 +4,15 @@ import { useStyles } from '../App';
 import bird from '../assets/bird.gif';
 import LI from '../assets/LI.png';
 import github from '../assets/github.png';
+import { useTheme } from './themeProvider';
+
 
 const Contact = () => {
 	const [showBird, setShowBird] = useState(false);
 	const [birdStyle, setBirdStyle] = useState({});
 	const classes = useStyles();
 	const buttonRef = useRef(null);
+  const { theme } = useTheme();
 	const [formData, setFormData] = useState({
     user_email: '',
     from_name: '',
@@ -69,8 +72,8 @@ const Contact = () => {
 	return (
 		<section className={`${classes.contentContainer} aboutContainer`}>
 			<section className='contactContainer'>
-				<h2 className='contactTitle'>Contact</h2>
-				<section className='reachOut'>
+				<h2 style={{ color: theme === 'light' ? 'var(--light-text)' : 'var(--dark-text)' }} className='contactTitle'>Contact</h2>
+				<section style={{ color: theme === 'light' ? 'var(--light-text)' : 'var(--dark-text)' }} className='reachOut'>
 					<p>
 						Reach out via LinkedIn, follow me on Github, or simply shoot me an email
 						below.

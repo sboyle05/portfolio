@@ -1,9 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import { useStyles } from '../App';
 import './projects.css';
-import WTC from '../assets/WTC.png';
-import AWN from '../assets/AWN.jpg';
+// import WTC from '../assets/WTC.png';
+// import AWN from '../assets/AWN.jpg';
 import github from '../assets/github.png';
 
 const Projects = () => {

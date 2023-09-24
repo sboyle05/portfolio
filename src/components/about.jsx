@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { useStyles } from '../App';
 import './about.css';
-import sam from '../assets/sam.jpeg';
-import sam2 from '../assets/sam2.png';
-import sam3 from '../assets/sam3.jpeg';
-import sam4 from '../assets/sam4.jpeg';
-import sam5 from '../assets/sam5.jpeg';
-import sam6 from '../assets/sam6.jpeg';
+// import sam from '../assets/sam.jpeg';
+// import sam2 from '../assets/sam2.png';
+// import sam3 from '../assets/sam3.jpeg';
+// import sam4 from '../assets/sam4.jpeg';
+// import sam5 from '../assets/sam5.jpeg';
+// import sam6 from '../assets/sam6.jpeg';
 const About = () => {
 	const classes = useStyles();
 

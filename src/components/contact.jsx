@@ -1,10 +1,8 @@
 import React, { useState, useRef } from 'react';
-import emailjs from 'emailjs-com';
 import './contact.css';
 import { useStyles } from '../App';
 import bird from '../assets/bird.gif';
 import LI from '../assets/LI.png';
-import axios from 'axios';
 import github from '../assets/github.png';
 
 const Contact = () => {

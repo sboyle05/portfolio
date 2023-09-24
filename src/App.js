@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import dunes from './assets/dunes.mp4'
+// import dunes from './assets/dunes.mp4'
 import Home from "./components/home";
 import About from "./components/about";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
 import { Button, ButtonGroup } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import zIndex from "@material-ui/core/styles/zIndex";
+// import zIndex from "@material-ui/core/styles/zIndex";
 
 export const useStyles = makeStyles((theme) => ({
   buttonGroup: {

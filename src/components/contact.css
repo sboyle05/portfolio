@@ -100,3 +100,8 @@
 #submitEmail:active {
 	background: linear-gradient(145deg, #222, #111);
 }
+@media (max-width: 768px){
+  .emailContainer form, .yourName, .yourEmail, ::placeholder{
+    color: black;
+  }
+}

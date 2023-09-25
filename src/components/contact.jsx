@@ -10,6 +10,7 @@ import { useTheme } from './themeProvider';
 const Contact = () => {
 	const [showBird, setShowBird] = useState(false);
 	const [birdStyle, setBirdStyle] = useState({});
+  const resumeUrl = "https://d1jca6dx52tygx.cloudfront.net/Resume.pdf";
 	const classes = useStyles();
 	const buttonRef = useRef(null);
   const { theme } = useTheme();
@@ -69,6 +70,7 @@ const Contact = () => {
     });
   };
 
+
 	return (
 		<section className={`${classes.contentContainer} aboutContainer`}>
 			<section className='contactContainer'>
@@ -92,6 +94,11 @@ const Contact = () => {
 								</a>
                 </section>
 				</section>
+        <section>
+        <a href={resumeUrl} download="Sam-Boyle-Resume.pdf" target="_blank" rel="noopener noreferrer">
+        <button id='downloadResume'>Download Resume</button>
+      </a>
+        </section>
 				<section className='emailContainer'>
         <form onSubmit={handleSubmit}>
         <input

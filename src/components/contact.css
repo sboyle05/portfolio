@@ -44,6 +44,27 @@
   margin-left: 10px;
   margin-top: -4px;
 }
+
+#downloadResume{
+  margin-bottom: 20px;
+  width: 175px;
+	padding: 8px 18px;
+	border: 1px solid #5d5d5d;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	background: linear-gradient(145deg, #333, #222);
+	color: #fff;
+	font-weight: bold;
+	transition: all 0.3s ease;
+  border-radius: 15px;
+}
+
+#downloadResume:hover {
+	background: linear-gradient(145deg, #555, #444);
+}
+#downloadResume:active {
+	background: linear-gradient(145deg, #222, #111);
+}
+
 .emailContainer form{
   display: flex;
   flex-direction: column;
@@ -103,5 +124,15 @@
 @media (max-width: 768px){
   .emailContainer form, .yourName, .yourEmail, ::placeholder{
     color: black;
+  }
+}
+
+@media (max-width: 410px){
+  .emailContainer form, .yourName, .yourEmail, ::placeholder{
+    color: black;
+  }
+  .contactContainer form{
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }

@@ -60,7 +60,6 @@ const Contact = () => {
     }),
     })
       .then((response) => response.json())
-      .then((data) => console.log('Email sent successfully:', data))
       .catch((error) => console.error('Error sending email:', error));
 
     setFormData({

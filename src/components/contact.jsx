@@ -10,7 +10,7 @@ import { useTheme } from './themeProvider';
 const Contact = () => {
 	const [showBird, setShowBird] = useState(false);
 	const [birdStyle, setBirdStyle] = useState({});
-  const resumeUrl = "https://d1jca6dx52tygx.cloudfront.net/Resume.pdf";
+  const resumeUrl = "https://d1jca6dx52tygx.cloudfront.net/Resume2.pdf";
 	const classes = useStyles();
 	const buttonRef = useRef(null);
   const { theme } = useTheme();

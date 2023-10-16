@@ -15,7 +15,7 @@ code {
 :root {
   --light-text: #121212;
   --dark-text: #ffffff;
-  --light-background: rgba(255, 255, 255, 0.5);
+  --light-background: rgba(255, 255, 255, 0.6);
   --dark-background: rgba(0, 0, 0, 0.8);
 }
 

@@ -7,15 +7,56 @@ import './projects.css';
 import github from '../assets/github.png';
 import { useTheme } from './themeProvider';
 
-
 const Projects = () => {
 	const classes = useStyles();
 	const { theme } = useTheme();
 	return (
 		<section className={`${classes.contentContainer} aboutContainer`}>
 			<section className='projectContainer'>
-				<h2 style={{ color: theme === 'light' ? 'var(--light-text)' : 'var(--dark-text)' }} id='projectsTitle'>Projects</h2>
+				<h2
+					style={{
+						color: theme === 'light' ? 'var(--light-text)' : 'var(--dark-text)',
+					}}
+					id='projectsTitle'
+				>
+					Projects
+				</h2>
 				<section className='projectLinks'>
+					<section className='individualProject'>
+						<a
+							href='https://www.tasting-notes.net/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<img
+								id='tastingNotesLink'
+								src='https://d1jca6dx52tygx.cloudfront.net/tastingNotes.png'
+								alt='tastingNotes logo'
+							/>
+						</a>
+						<section className='projectInfo'>
+							<h3 className='projectName'>Tasting Notes</h3>
+							<p>
+								Designed specifically for the discerning winemaker, TastingNotes
+								is a harmonious blend of the world of winemaking and
+								cutting-edge technology. While winemakers masterfully create
+								intoxicating flavors, they may not always wish to describe them
+								in words. Enter TastingNotes. Powered by OpenAI's API, this site crafts tasting notes in a variety of styles, whether
+								you're looking for classic, humorous, or a narrative that tells
+								a story. It's a unique interface where winemaking meets
+								artificial intelligence, simplifying the documentation of your
+								art. Embark on this innovative journey by clicking on our logo
+								or uncover the mechanics on GitHub.
+								<a
+									href='https://github.com/sboyle05/tastingNotes'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<img id='githubIcon' src={github} alt='githubicon'></img>
+								</a>
+							</p>
+						</section>
+					</section>
 					<section className='individualProject'>
 						<a
 							href='https://what-to-cook.onrender.com/'
@@ -82,7 +123,13 @@ const Projects = () => {
 					</section>
 				</section>
 
-				<p style={{ color: theme === 'light' ? 'var(--light-text)' : 'var(--dark-text)' }}>The Magic Behind It All</p>
+				<p
+					style={{
+						color: theme === 'light' ? 'var(--light-text)' : 'var(--dark-text)',
+					}}
+				>
+					The Magic Behind It All
+				</p>
 				<section className='iconContainer'>
 					<img
 						className='techIcon'

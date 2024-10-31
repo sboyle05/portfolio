@@ -9,6 +9,7 @@ const Apps = () => {
 
 	return (
 		<section className={`${classes.contentContainer} appsContainer`}>
+      <section className='appsContainer'>
 			<h2
 				style={{
 					color: theme === 'light' ? 'var(--light-text)' : 'var(--dark-text)',
@@ -53,6 +54,7 @@ const Apps = () => {
 				</p>
 			</section>
 		</section>
+    </section>
 	);
 };
 

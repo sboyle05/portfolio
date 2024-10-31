@@ -7,6 +7,7 @@ import Contact from './components/contact';
 import { Button, ButtonGroup, Divider as MuiDivider } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { useTheme } from './components/themeProvider';
+import Apps from './components/apps';
 
 export const useStyles = makeStyles((theme) => ({
 	buttonGroup: {
@@ -116,6 +117,18 @@ function App() {
 						}}
 						className={classes.button}
 						component={Link}
+						to='/apps'
+					>
+						Apps
+					</Button>
+					<Divider />
+					<Button
+						style={{
+							color:
+								theme === 'light' ? 'var(--light-text)' : 'var(--dark-text)',
+						}}
+						className={classes.button}
+						component={Link}
 						to='/projects'
 					>
 						Projects
@@ -144,6 +157,7 @@ function App() {
 				</Button>
 				<Routes>
 					<Route path='/about' element={<About />} />
+					<Route path='apps' element={<Apps />} />
 					<Route path='/projects' element={<Projects />} />
 					<Route path='/contact' element={<Contact />} />
 					<Route path='/' element={<Home />} />

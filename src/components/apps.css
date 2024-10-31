@@ -1,0 +1,144 @@
+/* Main container styling for the Apps overview */
+.appsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+}
+
+#appsTitle {
+  align-self: center;
+  font-size: 2rem;
+  font-family: 'Lexend Tera', sans-serif;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.sharedContentWidth {
+  width: 80%;
+  max-width: 700px;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: 'Oxygen', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+/* Styling for each app section */
+.individualApp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  gap: 1rem;
+  background-color: var(--background);
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+}
+
+#AppIcon {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.appName {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Privacy Policy Section */
+.privacyPolicy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 0;
+  background-color: var(--background);
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+}
+
+.privacyPolicy h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.privacyPolicy p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+/* Responsive styles for tablets */
+@media (min-width: 546px) and (max-width: 768px) {
+  .appsContainer {
+    height: calc(100vh - 60px);
+    padding: 1rem;
+  }
+
+  #appsTitle {
+    font-size: 1.5rem;
+    margin-top: 60px;
+  }
+
+  .sharedContentWidth {
+    width: 95%;
+  }
+
+  #AppIcon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Responsive styles for smaller mobile devices */
+@media (min-width: 400px) and (max-width: 545px) {
+  .appsContainer {
+    height: calc(100vh - 60px);
+    padding: 0.75rem;
+  }
+
+  #appsTitle {
+    font-size: 1.5rem;
+    margin-top: 60px;
+  }
+
+  .sharedContentWidth {
+    width: 98%;
+  }
+
+  #AppIcon {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+/* Responsive styles for very small devices */
+@media (max-width: 400px) {
+  .appsContainer {
+    height: calc(100vh - 60px);
+    padding: 1rem;
+  }
+
+  #appsTitle {
+    font-size: 1.25rem;
+    margin-top: 50px;
+  }
+
+  .sharedContentWidth {
+    width: 100%;
+  }
+
+  #AppIcon {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 0.5rem;
+  }
+}

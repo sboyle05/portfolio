@@ -226,7 +226,7 @@ const Projects = () => {
 					<img
 						className='techIcon'
 						alt='icon'
-						src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg'
+						src={require('../assets/aws.png')}
 					/>
 				</section>
 			</section>

@@ -83,7 +83,9 @@
     height: calc(100vh - 60px);
     padding: 1rem;
   }
-
+  .individualApp{
+    flex-direction: column;
+  }
   #appsTitle {
     font-size: 1.5rem;
     margin-top: 20%;
@@ -129,7 +131,9 @@
     height: calc(100vh - 60px);
     padding: 1rem;
   }
-
+  .individualApp{
+    flex-direction: column;
+  }
   #appsTitle {
     font-size: 1.25rem;
     margin-top: 35%;
@@ -143,6 +147,9 @@
     height: 60px;
     width: 60px;
     margin-bottom: 0.5rem;
+  }
+  .individualApp{
+    flex-direction: column;
   }
   .aboutContainer{
     padding: 1rem;

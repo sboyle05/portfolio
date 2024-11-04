@@ -16,6 +16,15 @@ export const useStyles = makeStyles((theme) => ({
 		left: '50%',
 		transform: 'translateX(-50%)',
 		zIndex: 1000,
+		'& .MuiButton-root': {
+			marginRight: theme.spacing(2), // Default gap between buttons
+		},
+		// Media query for smaller screens
+		'@media (max-width: 600px)': {
+			'& .MuiButton-root': {
+				marginRight: theme.spacing(0.0), // Smaller gap for mobile
+			},
+		},
 	},
 	contentContainer: {
 		paddingTop: '0px',

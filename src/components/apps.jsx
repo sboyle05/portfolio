@@ -20,7 +20,7 @@ const Apps = () => {
 			</h2>
 			<section className='appsList'>
 				<section className='individualApp'>
-					<h3 className='appName'>Reading Light Ad Free</h3>
+					<h3 className='appName'>Reading Light Deluxe</h3>
           <img
 								id='AppIcon'
 								src={require('../assets/ReadingLight.png')}

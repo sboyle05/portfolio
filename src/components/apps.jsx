@@ -26,6 +26,7 @@ const Apps = () => {
 								src={require('../assets/ReadingLight.png')}
 								alt='Reading Light logo'
 							/>
+								<p className='downLoadLink'><a href="https://apps.apple.com/us/app/reading-light-deluxe/6737575119" target="_blank" rel="noopener noreferrer">IOS Download</a></p>
 					<p>
 						An ad-free reading light app that uses your phone screen to
 						illuminate your book. Customize the light's color, brightness, and
@@ -39,6 +40,8 @@ const Apps = () => {
 								src={require('../assets/eggcellentSales.png')}
 								alt='Reading Light logo'
 							/>
+
+
 					<p>
           Eggcellent Sales is a simple and intuitive sales tracking app designed for small businesses, initially inspired by tracking egg sales. The app enables users to record sales, manage customer information, track products, monitor expenses, and generate insights for their business. With an easy-to-use interface, Eggcellent Sales is ideal for business owners who need a straightforward solution to manage transactions, stay organized, and grow their business efficiently.
 					</p>

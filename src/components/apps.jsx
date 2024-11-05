@@ -8,7 +8,7 @@ const Apps = () => {
 	const { theme } = useTheme();
 
 	return (
-		<section className={`${classes.contentContainer} appsContainer`}>
+		<section style={{ color: theme === 'light' ? '#121212' : '#ffffff' }} className={`${classes.contentContainer} appsContainer`}>
       <section className='appsContainer'>
 			<h2
 				style={{

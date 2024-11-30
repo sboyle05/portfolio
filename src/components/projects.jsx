@@ -37,7 +37,7 @@ const Projects = () => {
 						<section className='projectInfo'>
 							<h3 className='projectName'>Tasting Notes</h3>
 							<p>
-								Designed specifically for the discerning winemaker, TastingNotes
+								Designed specifically for the discerning winemaker, Tasting Notes
 								is a harmonious blend of the world of winemaking and
 								cutting-edge technology. While winemakers masterfully create
 								intoxicating flavors, they may not always wish to describe them

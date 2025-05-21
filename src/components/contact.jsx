@@ -94,9 +94,9 @@ const Contact = () => {
                 </section>
 				</section>
         <section>
-        <a href={resumeUrl} download="Sam-Boyle-Resume.pdf" target="_blank" rel="noopener noreferrer">
+{/*         <a href={resumeUrl} download="Sam-Boyle-Resume.pdf" target="_blank" rel="noopener noreferrer">
         <button id='downloadResume'>Download Resume</button>
-      </a>
+      </a> */}
         </section>
 				<section className='emailContainer'>
         <form onSubmit={handleSubmit}>
